@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHeaderDrawer extends StatefulWidget {
   const MyHeaderDrawer({super.key});
@@ -13,14 +14,14 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
     return Container(
       color: Colors.blue,
       width: double.infinity,
-      height: 220,
+      height: 250,
       padding: const EdgeInsets.only(top: 20.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             margin: const EdgeInsets.only(bottom: 10),
-            height: 115,
+            height: 105,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
@@ -28,13 +29,13 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
               ),
             ),
           ),
-          const Text(
+          Text(
             'Ricardo Javier Llacsahuanga',
-            style: TextStyle(color: Colors.white, fontSize: 18),
+            style: GoogleFonts.aladin(color: Colors.white, fontSize: 20),
           ),
-          const Text(
+          Text(
             'Desarrollador Flutter',
-            style: TextStyle(color: Colors.white, fontSize: 14),
+            style: GoogleFonts.aladin(color: Colors.white, fontSize: 16),
           ),
         ],
       ),

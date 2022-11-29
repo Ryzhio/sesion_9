@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:usersave/screens/index.dart';
 import 'package:usersave/widgets/myheaderdrawer.dart';
 
@@ -19,8 +21,12 @@ class CustomDrawerWidget extends StatelessWidget {
             ],
           ),
           ListTile(
-            leading: const Icon(Icons.person),
-            title: const Text('Perfíl'),
+            leading: const Icon(Ionicons.person_circle_outline),
+            title: Text(
+              'Perfíl',
+              style: GoogleFonts.aladin(
+                  color: Colors.black, fontWeight: FontWeight.w700),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -29,8 +35,12 @@ class CustomDrawerWidget extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.home),
-            title: const Text('Home'),
+            leading: const Icon(Ionicons.home),
+            title: Text(
+              'Home',
+              style: GoogleFonts.aladin(
+                  color: Colors.black, fontWeight: FontWeight.w700),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -39,8 +49,12 @@ class CustomDrawerWidget extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text('Configuración'),
+            leading: const Icon(Ionicons.settings_sharp),
+            title: Text(
+              'Configuración',
+              style: GoogleFonts.aladin(
+                  color: Colors.black, fontWeight: FontWeight.w700),
+            ),
             onTap: () {
               Navigator.push(
                 context,

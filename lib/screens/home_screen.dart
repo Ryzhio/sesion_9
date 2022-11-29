@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:usersave/widgets/index.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,14 +9,17 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Screen'),
+        title: Text(
+          'Home Screen',
+          style: GoogleFonts.aladin(color: Colors.black),
+        ),
         centerTitle: true,
       ),
       drawer: const CustomDrawerWidget(),
-      body: const Center(
+      body: Center(
         child: Text(
           'BIENVENIDO',
-          style: TextStyle(fontSize: 28),
+          style: GoogleFonts.aladin(fontSize: 28),
         ),
       ),
     );

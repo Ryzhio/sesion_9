@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyHeaderPerfil extends StatefulWidget {
   const MyHeaderPerfil({super.key});
@@ -13,14 +14,14 @@ class _MyHeaderPerfilState extends State<MyHeaderPerfil> {
     return Container(
       color: Colors.blue,
       width: double.infinity,
-      height: 360,
+      height: 365,
       padding: const EdgeInsets.only(top: 20.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             margin: const EdgeInsets.only(bottom: 10),
-            height: 150,
+            height: 120,
             decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
@@ -28,25 +29,25 @@ class _MyHeaderPerfilState extends State<MyHeaderPerfil> {
               ),
             ),
           ),
-          const Center(
+          Center(
             child: Text(
               'Ricardo Javier Llacsahuanga',
-              style: TextStyle(color: Colors.white, fontSize: 18),
+              style: GoogleFonts.aladin(color: Colors.white, fontSize: 20),
             ),
           ),
-          const Center(
+          Center(
             child: Text(
               'Desarrollador Flutter',
-              style: TextStyle(color: Colors.white, fontSize: 14),
+              style: GoogleFonts.aladin(color: Colors.white, fontSize: 18),
             ),
           ),
           const SizedBox(
             height: 40,
           ),
-          const Center(
+          Center(
             child: Text(
-              '1000  Seguidores      |       500  Seguidos',
-              style: TextStyle(color: Colors.white),
+              '1000   Seguidores       |        500   Seguidos',
+              style: GoogleFonts.aladin(color: Colors.white),
             ),
           )
         ],

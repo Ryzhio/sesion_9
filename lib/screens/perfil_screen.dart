@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:usersave/screens/config_screen.dart';
 import 'package:usersave/screens/my_header_perfil.dart';
@@ -15,9 +16,9 @@ class PerfilScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
-        title: const Text(
+        title: Text(
           'Perfil',
-          style: TextStyle(color: Colors.white, fontSize: 18),
+          style: GoogleFonts.aladin(color: Colors.white, fontSize: 18),
         ),
         actions: [
           IconButton(
@@ -29,7 +30,7 @@ class PerfilScreen extends StatelessWidget {
                 ),
               ),
             },
-            icon: const Icon(Icons.settings),
+            icon: const Icon(Ionicons.settings_sharp),
             color: Colors.white,
             padding: const EdgeInsetsDirectional.all(15),
           )
@@ -54,17 +55,20 @@ class PerfilScreen extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              const Text(
+              Text(
                 'Email',
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: GoogleFonts.aladin(fontWeight: FontWeight.w600),
               ),
             ],
           ),
-          const ListTile(
-            title: Text('            ricardollacsa.sud@gmail.com'),
+          ListTile(
+            title: Text(
+              '                 ricardollacsa.sud@gmail.com',
+              style: GoogleFonts.aladin(fontSize: 20),
+            ),
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -77,17 +81,20 @@ class PerfilScreen extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              const Text(
+              Text(
                 'Celular',
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: GoogleFonts.aladin(fontWeight: FontWeight.w600),
               ),
             ],
           ),
-          const ListTile(
-            title: Text('            +51 959296957'),
+          ListTile(
+            title: Text(
+              '                 +51 959296957',
+              style: GoogleFonts.aladin(fontSize: 20),
+            ),
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -100,17 +107,20 @@ class PerfilScreen extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              const Text(
+              Text(
                 'Instagram',
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: GoogleFonts.aladin(fontWeight: FontWeight.w600),
               ),
             ],
           ),
-          const ListTile(
-            title: Text('            r_llacsa'),
+          ListTile(
+            title: Text(
+              '                 r_llacsa',
+              style: GoogleFonts.aladin(fontSize: 20),
+            ),
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -123,17 +133,20 @@ class PerfilScreen extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              const Text(
+              Text(
                 'Facebook',
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: GoogleFonts.aladin(fontWeight: FontWeight.w600),
               ),
             ],
           ),
-          const ListTile(
-            title: Text('            Ricardo Javier Llacsahuanga'),
+          ListTile(
+            title: Text(
+              '                 Ricardo Javier Llacsahuanga',
+              style: GoogleFonts.aladin(fontSize: 20),
+            ),
           ),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -146,14 +159,17 @@ class PerfilScreen extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              const Text(
+              Text(
                 'Git Hub',
-                style: TextStyle(fontWeight: FontWeight.w600),
+                style: GoogleFonts.aladin(fontWeight: FontWeight.w600),
               ),
             ],
           ),
-          const ListTile(
-            title: Text('            Ryzhio'),
+          ListTile(
+            title: Text(
+              '                 Ryzhio',
+              style: GoogleFonts.aladin(fontSize: 20),
+            ),
           ),
         ],
       ),
